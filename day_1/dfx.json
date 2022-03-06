@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "day_1": {
+      "type": "motoko",
+      "main": "src/day_1/main.mo"
+    },
+    "day_1_assets": {
+      "type": "assets",
+      "source": [
+        "src/day_1_assets/assets"
+      ],
+      "dependencies": [
+        "day_1"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
