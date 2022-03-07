@@ -5,6 +5,10 @@
     "day_1": {
       "type": "motoko",
       "main": "challenges/day_1.mo"
+    },
+    "day_2": {
+      "type": "motoko",
+      "main": "challenges/day_2.mo"
     }
   },
   "defaults": {
