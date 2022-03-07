@@ -112,7 +112,7 @@ actor {
 
         if (size < 2) return arr;
 
-        var arrMut = List.toVarArray<Nat>(List.fromArray<Nat>(arr));
+        var arrMut = Array.thaw<Nat>(arr);
 
 
         for(_ in Iter.range(0, size-1)){
