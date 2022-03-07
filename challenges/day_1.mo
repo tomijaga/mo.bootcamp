@@ -1,11 +1,10 @@
 import Iter "mo:base/Iter";
 import Buffer "mo:base/Buffer";
 import List "mo:base/List";
-import Nat_Lb "mo:base/Nat";
-import Debug "mo:base/Debug";
 import Array "mo:base/Array";
+import Debug "mo:base/Debug";
 
-import Format "../../../utils/src/utils/format";
+import Format "../utils/format";
 
 actor {
     // challenge 1
@@ -102,7 +101,7 @@ actor {
             arr[j]:= temp;
         };
 
-        let lastIndex =  arr.size()-1;
+        let lastIndex:Int =  arr.size()-1;
 
         for (i in Iter.range(0, lastIndex)) {
             var min:Nat = arrMut[i];
@@ -120,7 +119,7 @@ actor {
                 };  
                 
             swap(arrMut, i, minIndex);
-            Debug.print(Format.format("i = {}, min = {}, arr = {}", [#nat i, #nat minIndex, #natArrayMut arrMut]));
+            Debug.print(Format.format("i = {}, minIndex = {}, arr = {}", [#num i, #num minIndex, #natArrayMut arrMut]));
 
         };
 

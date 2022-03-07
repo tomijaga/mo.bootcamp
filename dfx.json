@@ -2,18 +2,9 @@
   "version": 1,
   "dfx": "0.8.4",
   "canisters": {
-    "utils": {
+    "day_1": {
       "type": "motoko",
-      "main": "src/utils/main.mo"
-    },
-    "utils_assets": {
-      "type": "assets",
-      "source": [
-        "src/utils_assets/assets"
-      ],
-      "dependencies": [
-        "utils"
-      ]
+      "main": "challenges/day_1.mo"
     }
   },
   "defaults": {
