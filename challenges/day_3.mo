@@ -80,12 +80,16 @@ actor {
     };
 
     // challenge 10
-    func contains<A>(arr: [A], a: A, f: ((A, A))-> Bool): async Bool{
+     func contains<A>(arr: [A], a: A, f: ((A, A))-> Bool):  Bool{
         for (n in arr.vals()){
             if (f(n, a)){
                 return true;
             };
         };
         return false;
+    };
+
+    public query func testContains(arr: [Nat], a: Nat): async Bool{
+        return contains<Nat>(arr, a, func(a, b) {a==b});
     }
 }
