@@ -91,5 +91,5 @@ actor {
 
     public query func testContains(arr: [Nat], a: Nat): async Bool{
         return contains<Nat>(arr, a, func(a, b) {a==b});
-    }
+    };
 }
