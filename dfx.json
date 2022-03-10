@@ -13,11 +13,15 @@
     "day_3": {
       "type": "motoko",
       "main": "challenges/day_3.mo"
+    },
+    "day_4": {
+      "type": "motoko",
+      "main": "challenges/day_4/main.mo"
     }
   },
   "defaults": {
     "build": {
-      "packtool": "",
+      "packtool": "vessel sources",
       "args": ""
     }
   },
