@@ -17,6 +17,14 @@
     "day_4": {
       "type": "motoko",
       "main": "challenges/day_4/main.mo"
+    },
+    "day_5": {
+      "type": "motoko",
+      "main": "challenges/day_5/main.mo"
+    },
+    "day_5_stable": {
+      "type": "motoko",
+      "main": "challenges/day_5/stable.mo"
     }
   },
   "defaults": {
