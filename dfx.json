@@ -25,6 +25,14 @@
     "day_5_stable": {
       "type": "motoko",
       "main": "challenges/day_5/stable.mo"
+    },
+    "day_6": {
+      "type": "motoko",
+      "main": "challenges/day_6/main.mo"
+    },
+    "day_6_wallet": {
+      "type": "motoko",
+      "main": "challenges/day_6/wallet.mo"
     }
   },
   "defaults": {
